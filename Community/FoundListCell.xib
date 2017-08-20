@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="FoundListCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEk-CM-kkD">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="103"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="wl8-8q-OXb">
+                                <rect key="frame" x="11" y="8" width="120" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="eMa-Pc-gHX"/>
+                                    <constraint firstAttribute="height" constant="90" id="yqn-bm-iNy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="少年朝阳宫" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H57-fr-wif">
+                                <rect key="frame" x="141" y="8" width="195" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-bH-Y0T">
+                                <rect key="frame" x="162" y="80" width="32" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="fhK-hd-m1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="发现－已加入" translatesAutoresizingMaskIntoConstraints="NO" id="LS1-bl-rub">
+                                <rect key="frame" x="269" y="74" width="67" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="CDC-m5-rI2"/>
+                                    <constraint firstAttribute="height" constant="22" id="Fny-QA-DVv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="发现－附近" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-qn-Bvr">
+                                <rect key="frame" x="141" y="80" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="ErV-6R-QO9"/>
+                                    <constraint firstAttribute="height" constant="16" id="VWo-uu-akW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="朝阳大望路" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp7-sB-2vy">
+                                <rect key="frame" x="141" y="33" width="195" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yu8-qn-Bvr" firstAttribute="leading" secondItem="wl8-8q-OXb" secondAttribute="trailing" constant="10" id="CqB-yx-29d"/>
+                            <constraint firstAttribute="bottom" secondItem="9AD-bH-Y0T" secondAttribute="bottom" constant="7" id="Inv-Q5-mKB"/>
+                            <constraint firstItem="wl8-8q-OXb" firstAttribute="leading" secondItem="aEk-CM-kkD" secondAttribute="leading" constant="11" id="J7k-Ib-0Kr"/>
+                            <constraint firstAttribute="bottom" secondItem="LS1-bl-rub" secondAttribute="bottom" constant="7" id="KgG-h6-WSK"/>
+                            <constraint firstItem="H57-fr-wif" firstAttribute="top" secondItem="aEk-CM-kkD" secondAttribute="top" constant="8" id="LyS-i1-tHW"/>
+                            <constraint firstItem="wp7-sB-2vy" firstAttribute="leading" secondItem="wl8-8q-OXb" secondAttribute="trailing" constant="10" id="Nnd-wj-ozu"/>
+                            <constraint firstAttribute="bottom" secondItem="yu8-qn-Bvr" secondAttribute="bottom" constant="7" id="Obd-LC-G4u"/>
+                            <constraint firstAttribute="trailing" secondItem="H57-fr-wif" secondAttribute="trailing" constant="10" id="Oyc-MB-thk"/>
+                            <constraint firstItem="9AD-bH-Y0T" firstAttribute="leading" secondItem="yu8-qn-Bvr" secondAttribute="trailing" constant="5" id="X9z-ck-Lry"/>
+                            <constraint firstItem="wp7-sB-2vy" firstAttribute="top" secondItem="H57-fr-wif" secondAttribute="bottom" constant="8" id="cz9-6Y-3gA"/>
+                            <constraint firstAttribute="trailing" secondItem="LS1-bl-rub" secondAttribute="trailing" constant="10" id="joQ-6u-pQ5"/>
+                            <constraint firstItem="LS1-bl-rub" firstAttribute="top" secondItem="wp7-sB-2vy" secondAttribute="bottom" constant="8" id="ng6-fw-eko"/>
+                            <constraint firstItem="H57-fr-wif" firstAttribute="leading" secondItem="wl8-8q-OXb" secondAttribute="trailing" constant="10" id="oEs-V4-oaf"/>
+                            <constraint firstAttribute="trailing" secondItem="wp7-sB-2vy" secondAttribute="trailing" constant="10" id="tKN-xF-bhJ"/>
+                            <constraint firstItem="wl8-8q-OXb" firstAttribute="top" secondItem="aEk-CM-kkD" secondAttribute="top" constant="8" id="vWA-qU-qmE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aEk-CM-kkD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2R1-JY-xAH"/>
+                    <constraint firstItem="aEk-CM-kkD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4Wu-c4-eJr"/>
+                    <constraint firstAttribute="bottom" secondItem="aEk-CM-kkD" secondAttribute="bottom" constant="1" id="6rz-1N-OEA"/>
+                    <constraint firstAttribute="trailing" secondItem="aEk-CM-kkD" secondAttribute="trailing" id="aZB-LO-DTl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adress" destination="wp7-sB-2vy" id="NH8-St-gbt"/>
+                <outlet property="juli" destination="9AD-bH-Y0T" id="4N1-oZ-3cb"/>
+                <outlet property="locationImage" destination="yu8-qn-Bvr" id="oEs-jB-Yoe"/>
+                <outlet property="photoImgview" destination="wl8-8q-OXb" id="N3p-gP-Jrt"/>
+                <outlet property="stausimg" destination="LS1-bl-rub" id="Ubo-DN-HIx"/>
+                <outlet property="title" destination="H57-fr-wif" id="zkB-bg-no9"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="160.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.png" width="212" height="224"/>
+        <image name="发现－已加入" width="67" height="22"/>
+        <image name="发现－附近" width="17" height="17"/>
+    </resources>
+</document>

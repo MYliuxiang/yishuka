@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="SignAginCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-Fk-una">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="ARe-OG-IAb"/>
+                            <constraint firstAttribute="height" constant="50" id="iJE-cr-JW0"/>
+                        </constraints>
+                        <state key="normal" image="001.png"/>
+                        <connections>
+                            <action selector="callPhone:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UqT-BS-rYX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18617348375" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-Uz-XUi">
+                        <rect key="frame" x="70" y="37" width="90" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2yx-NC-qg4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-sr-3CL">
+                        <rect key="frame" x="70" y="13" width="32" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="eN2-VU-PoA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11d-Y6-ldQ">
+                        <rect key="frame" x="170" y="0.0" width="40" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="5C3-Pg-NRc"/>
+                            <constraint firstAttribute="height" constant="70" id="QE4-QY-nhJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-16" minY="25" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="20"/>
+                        <state key="normal" title="已到" image="已到1">
+                            <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="已到" image="qian">
+                            <color key="titleColor" red="0.22352941176470589" green="0.73725490196078436" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="highlighted" image="qian"/>
+                        <connections>
+                            <action selector="btnAC1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y4e-us-vid"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-37-eOp">
+                        <rect key="frame" x="270" y="0.0" width="40" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="0VQ-EV-zVz"/>
+                            <constraint firstAttribute="width" constant="40" id="xt8-wS-6Ka"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-16" minY="25" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="20"/>
+                        <state key="normal" title="缺席" image="缺席1">
+                            <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="缺席" image="缺席2">
+                            <color key="titleColor" red="0.98431372549999996" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAC3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nur-cZ-Orq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4md-zA-7GZ">
+                        <rect key="frame" x="220" y="0.0" width="40" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="GFc-YL-vqx"/>
+                            <constraint firstAttribute="height" constant="70" id="PiP-ch-Ey8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-16" minY="25" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="20"/>
+                        <state key="normal" title="请假" image="请假1">
+                            <color key="titleColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" title="请假" image="请假2">
+                            <color key="titleColor" red="0.99215686274509807" green="0.63921568627450975" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnAC2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="67M-qp-EgK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hpp-Fk-una" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BnC-th-tyd"/>
+                    <constraint firstAttribute="trailing" secondItem="WNb-37-eOp" secondAttribute="trailing" constant="10" id="EGJ-f4-a5z"/>
+                    <constraint firstItem="4md-zA-7GZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qsj-YI-JH9"/>
+                    <constraint firstItem="8hj-sr-3CL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Sx3-Jw-T0W"/>
+                    <constraint firstItem="11d-Y6-ldQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wjy-Ka-SP6"/>
+                    <constraint firstItem="Dwd-Uz-XUi" firstAttribute="top" secondItem="8hj-sr-3CL" secondAttribute="bottom" constant="3" id="a5g-ct-NuY"/>
+                    <constraint firstItem="WNb-37-eOp" firstAttribute="leading" secondItem="4md-zA-7GZ" secondAttribute="trailing" constant="10" id="cIQ-v2-afj"/>
+                    <constraint firstItem="Hpp-Fk-una" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="due-u9-hCD"/>
+                    <constraint firstItem="4md-zA-7GZ" firstAttribute="leading" secondItem="11d-Y6-ldQ" secondAttribute="trailing" constant="10" id="iGL-gX-C3s"/>
+                    <constraint firstItem="WNb-37-eOp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pbN-7Q-dlC"/>
+                    <constraint firstItem="Dwd-Uz-XUi" firstAttribute="leading" secondItem="Hpp-Fk-una" secondAttribute="trailing" constant="10" id="uve-dZ-ZOg"/>
+                    <constraint firstItem="8hj-sr-3CL" firstAttribute="leading" secondItem="Hpp-Fk-una" secondAttribute="trailing" constant="10" id="x9d-vs-pv4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="11d-Y6-ldQ" id="VON-Xj-MMe"/>
+                <outlet property="btn2" destination="4md-zA-7GZ" id="n5l-Z6-Rrf"/>
+                <outlet property="btn3" destination="WNb-37-eOp" id="1U5-wJ-3Im"/>
+                <outlet property="headerBtn" destination="Hpp-Fk-una" id="EIk-a0-IIq"/>
+                <outlet property="nameLabel" destination="8hj-sr-3CL" id="znp-mf-Uos"/>
+                <outlet property="phoneLabel" destination="Dwd-Uz-XUi" id="cys-Ac-lg5"/>
+            </connections>
+            <point key="canvasLocation" x="222" y="236"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="001.png" width="230" height="230"/>
+        <image name="qian" width="16" height="16"/>
+        <image name="已到1" width="16" height="16"/>
+        <image name="缺席1" width="16" height="16"/>
+        <image name="缺席2" width="16" height="16"/>
+        <image name="请假1" width="16" height="16"/>
+        <image name="请假2" width="16" height="16"/>
+    </resources>
+</document>

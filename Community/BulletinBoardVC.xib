@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BulletinBoardVC">
+            <connections>
+                <outlet property="tableView" destination="OXX-tg-pan" id="15T-J5-WMV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OXX-tg-pan">
+                    <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PQ0-7D-zJU"/>
+                        <outlet property="delegate" destination="-1" id="9XW-2S-WZf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OXX-tg-pan" secondAttribute="bottom" constant="49" id="LbZ-xl-VGW"/>
+                <constraint firstItem="OXX-tg-pan" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="OeZ-Xz-w5L"/>
+                <constraint firstAttribute="trailing" secondItem="OXX-tg-pan" secondAttribute="trailing" id="eSg-IF-WVf"/>
+                <constraint firstItem="OXX-tg-pan" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rlN-79-Ap1"/>
+            </constraints>
+            <point key="canvasLocation" x="187" y="248"/>
+        </view>
+    </objects>
+</document>

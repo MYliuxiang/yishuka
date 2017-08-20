@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarVC">
+            <connections>
+                <outlet property="tableView" destination="wRd-hB-DYI" id="6po-yM-ilx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-DT-vje">
+                    <rect key="frame" x="0.0" y="64" width="98" height="30"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.72941176470000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="y0q-3U-eOo"/>
+                    </constraints>
+                    <state key="normal" image="星秀场－列表"/>
+                    <connections>
+                        <action selector="paixunAction:" destination="-1" eventType="touchUpInside" id="Gga-G5-FVs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nX-BM-PRZ">
+                    <rect key="frame" x="98" y="64" width="113" height="30"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.72941176470000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Pyt-xh-mm6"/>
+                    </constraints>
+                    <state key="normal" image="星秀场－查看"/>
+                    <connections>
+                        <action selector="chakanAction:" destination="-1" eventType="touchUpInside" id="3mU-Uz-YdN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snK-S9-YpN">
+                    <rect key="frame" x="211" y="64" width="109" height="30"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.72941176470000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fGT-m7-nwE"/>
+                    </constraints>
+                    <state key="normal" image="星秀场－录像"/>
+                    <connections>
+                        <action selector="videoAction:" destination="-1" eventType="touchUpInside" id="HWS-gt-3t6"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wRd-hB-DYI">
+                    <rect key="frame" x="0.0" y="94" width="320" height="474"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fzk-Lh-GaK"/>
+                        <outlet property="delegate" destination="-1" id="Rzd-mI-RGo"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4v7-DT-vje" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0AJ-dc-iuA"/>
+                <constraint firstItem="9nX-BM-PRZ" firstAttribute="leading" secondItem="4v7-DT-vje" secondAttribute="trailing" id="7mk-Tw-3WS"/>
+                <constraint firstAttribute="bottom" secondItem="wRd-hB-DYI" secondAttribute="bottom" id="EbW-57-fr4"/>
+                <constraint firstItem="9nX-BM-PRZ" firstAttribute="width" secondItem="4v7-DT-vje" secondAttribute="width" id="FuF-Hi-pDQ"/>
+                <constraint firstItem="snK-S9-YpN" firstAttribute="height" secondItem="4v7-DT-vje" secondAttribute="height" id="GRd-rA-dOK"/>
+                <constraint firstItem="snK-S9-YpN" firstAttribute="leading" secondItem="9nX-BM-PRZ" secondAttribute="trailing" id="IRJ-Zp-Sir"/>
+                <constraint firstItem="9nX-BM-PRZ" firstAttribute="height" secondItem="4v7-DT-vje" secondAttribute="height" id="W8c-rk-TPt"/>
+                <constraint firstItem="4v7-DT-vje" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Zna-3K-sK1"/>
+                <constraint firstItem="wRd-hB-DYI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bBk-DU-kwh"/>
+                <constraint firstItem="wRd-hB-DYI" firstAttribute="top" secondItem="snK-S9-YpN" secondAttribute="bottom" id="cPd-Sc-FXG"/>
+                <constraint firstAttribute="trailing" secondItem="wRd-hB-DYI" secondAttribute="trailing" id="coN-ip-PHv"/>
+                <constraint firstItem="snK-S9-YpN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="kcB-Ng-9UY"/>
+                <constraint firstAttribute="trailing" secondItem="snK-S9-YpN" secondAttribute="trailing" id="nKB-te-hyW"/>
+                <constraint firstItem="9nX-BM-PRZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="tUJ-8i-nRD"/>
+                <constraint firstItem="snK-S9-YpN" firstAttribute="width" secondItem="4v7-DT-vje" secondAttribute="width" id="xUJ-TR-etT"/>
+            </constraints>
+            <point key="canvasLocation" x="313" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="星秀场－列表" width="19" height="19"/>
+        <image name="星秀场－录像" width="19" height="19"/>
+        <image name="星秀场－查看" width="19" height="19"/>
+    </resources>
+</document>

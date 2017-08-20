@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivateVC">
+            <connections>
+                <outlet property="fankuiBtn" destination="Rpw-5C-toD" id="Ikr-k3-t9z"/>
+                <outlet property="headerView" destination="nh3-xc-fwk" id="CUH-eC-y6f"/>
+                <outlet property="tableView" destination="8JA-Dy-Q34" id="cng-MH-CEw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8JA-Dy-Q34">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UEu-6m-Xgk"/>
+                        <outlet property="delegate" destination="-1" id="xBn-vd-k57"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8JA-Dy-Q34" secondAttribute="trailing" id="SZi-LW-Szr"/>
+                <constraint firstAttribute="bottom" secondItem="8JA-Dy-Q34" secondAttribute="bottom" id="b0u-eZ-KPD"/>
+                <constraint firstItem="8JA-Dy-Q34" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hPV-34-YmW"/>
+                <constraint firstItem="8JA-Dy-Q34" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qjc-Qj-JvX"/>
+            </constraints>
+            <point key="canvasLocation" x="216" y="112"/>
+        </view>
+        <view contentMode="scaleToFill" id="nh3-xc-fwk">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkY-EJ-bcJ">
+                    <rect key="frame" x="20" y="25" width="280" height="35"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.63921568630000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="aEM-lH-A6P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="删除已读">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="yiduAction:" destination="-1" eventType="touchUpInside" id="KML-Tt-EfN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpw-5C-toD">
+                    <rect key="frame" x="20" y="80" width="280" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7AA-u0-c5Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="问题反馈">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fankuiAction:" destination="-1" eventType="touchUpInside" id="hbl-Kz-giS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gkY-EJ-bcJ" firstAttribute="top" secondItem="nh3-xc-fwk" secondAttribute="top" constant="25" id="1DR-ZQ-4Y9"/>
+                <constraint firstItem="gkY-EJ-bcJ" firstAttribute="leading" secondItem="nh3-xc-fwk" secondAttribute="leading" constant="20" id="7OY-m1-5MN"/>
+                <constraint firstItem="Rpw-5C-toD" firstAttribute="leading" secondItem="nh3-xc-fwk" secondAttribute="leading" constant="20" id="LTd-gB-1Qx"/>
+                <constraint firstAttribute="trailing" secondItem="gkY-EJ-bcJ" secondAttribute="trailing" constant="20" id="PO0-bO-k4b"/>
+                <constraint firstItem="Rpw-5C-toD" firstAttribute="top" secondItem="gkY-EJ-bcJ" secondAttribute="bottom" constant="20" id="SKN-IT-smG"/>
+                <constraint firstAttribute="trailing" secondItem="Rpw-5C-toD" secondAttribute="trailing" constant="20" id="bHD-Z0-gz9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-46" y="-6"/>
+        </view>
+    </objects>
+</document>

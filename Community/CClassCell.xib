@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="班级头像" translatesAutoresizingMaskIntoConstraints="NO" id="zvB-4V-5dU">
+                        <rect key="frame" x="10" y="10" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="D47-nc-exd"/>
+                            <constraint firstAttribute="width" constant="45" id="aRJ-A7-1Dd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="朝阳少年宫舞蹈班" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXG-DR-KdF">
+                        <rect key="frame" x="63" y="8" width="136" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="UCd-ke-r1g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="共12人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siy-2D-vd1">
+                        <rect key="frame" x="64" y="34" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="V3A-jr-1xD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="授课老师：张心灵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfT-mQ-JD5">
+                        <rect key="frame" x="64" y="60" width="136" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bGi-Uv-qhL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iss-uj-eie">
+                        <rect key="frame" x="259" y="31" width="45" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="580-CR-xhB"/>
+                            <constraint firstAttribute="width" constant="45" id="VfB-QY-bhf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="发公告">
+                            <color key="titleColor" red="0.99607843139999996" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAC:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Zov-Xe-2gX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iss-uj-eie" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CqY-fA-nfv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iss-uj-eie" secondAttribute="trailing" constant="10" id="DO8-Sc-Zxt"/>
+                    <constraint firstItem="zvB-4V-5dU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Eeo-sS-YaC"/>
+                    <constraint firstItem="zvB-4V-5dU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="R3T-2c-QrH"/>
+                    <constraint firstItem="siy-2D-vd1" firstAttribute="leading" secondItem="zvB-4V-5dU" secondAttribute="trailing" constant="10" id="ewH-SH-KPX"/>
+                    <constraint firstItem="PXG-DR-KdF" firstAttribute="leading" secondItem="zvB-4V-5dU" secondAttribute="trailing" constant="10" id="fnD-ye-g1J"/>
+                    <constraint firstItem="lfT-mQ-JD5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="64" id="gdm-A6-g24"/>
+                    <constraint firstItem="siy-2D-vd1" firstAttribute="top" secondItem="PXG-DR-KdF" secondAttribute="bottom" id="q7O-Zg-i8a"/>
+                    <constraint firstItem="PXG-DR-KdF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tel-BQ-jPW"/>
+                    <constraint firstItem="lfT-mQ-JD5" firstAttribute="top" secondItem="siy-2D-vd1" secondAttribute="bottom" id="uDi-VK-xHl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classImageView" destination="H2p-sc-9uM" id="ybu-t2-1mQ"/>
+                <outlet property="classLabel" destination="PXG-DR-KdF" id="aIy-pX-Rx0"/>
+                <outlet property="gonggaoBtn" destination="iss-uj-eie" id="f5Y-bg-l93"/>
+                <outlet property="peopleLable" destination="siy-2D-vd1" id="aHb-ER-DOo"/>
+                <outlet property="techerLabel" destination="lfT-mQ-JD5" id="o35-Cb-Kio"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="231"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="班级头像" width="42" height="42"/>
+    </resources>
+</document>

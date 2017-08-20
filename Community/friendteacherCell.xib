@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="friendteacherCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多多龙M8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7go-9o-7ze">
+                        <rect key="frame" x="55" y="13" width="63" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CSt-dF-HFF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.37486190029999999" green="0.37486190029999999" blue="0.37486190029999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐 钢琴 器乐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn9-0h-pHq">
+                        <rect key="frame" x="55" y="35" width="86" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.37486190029999999" green="0.37486190029999999" blue="0.37486190029999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AN-P1-qZv">
+                        <rect key="frame" x="126" y="13" width="50" height="20"/>
+                        <color key="backgroundColor" red="0.21272037697176449" green="0.54894174702853193" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="akw-es-Auw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.37486190029999999" green="0.37486190029999999" blue="0.37486190029999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-2d-Mkh">
+                        <rect key="frame" x="278" y="13" width="24" height="32"/>
+                        <state key="normal" image="个人－私信"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001.png" translatesAutoresizingMaskIntoConstraints="NO" id="GYu-ia-n28">
+                        <rect key="frame" x="13" y="13" width="34" height="34"/>
+                        <color key="backgroundColor" red="1" green="0.84523904220000001" blue="0.089752954060000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="CEI-Eb-vGF"/>
+                            <constraint firstAttribute="height" constant="34" id="jcT-3o-bMF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pn9-0h-pHq" firstAttribute="top" secondItem="7go-9o-7ze" secondAttribute="bottom" constant="2" id="3wa-rM-NEq"/>
+                    <constraint firstItem="0AN-P1-qZv" firstAttribute="bottom" secondItem="7go-9o-7ze" secondAttribute="bottom" id="6ww-7X-Xe6"/>
+                    <constraint firstItem="hdU-2d-Mkh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="D6E-f0-rXl"/>
+                    <constraint firstItem="0AN-P1-qZv" firstAttribute="top" secondItem="7go-9o-7ze" secondAttribute="top" id="F3q-jN-wHu"/>
+                    <constraint firstItem="0AN-P1-qZv" firstAttribute="leading" secondItem="7go-9o-7ze" secondAttribute="trailing" constant="8" id="HFP-yu-7in"/>
+                    <constraint firstItem="pn9-0h-pHq" firstAttribute="leading" secondItem="GYu-ia-n28" secondAttribute="trailing" constant="8" id="hh1-cc-FCo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hdU-2d-Mkh" secondAttribute="bottom" constant="5" id="ihs-vb-o27"/>
+                    <constraint firstItem="7go-9o-7ze" firstAttribute="top" secondItem="GYu-ia-n28" secondAttribute="top" id="iqT-to-GGp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hdU-2d-Mkh" secondAttribute="trailing" constant="10" id="jAk-LD-eMC"/>
+                    <constraint firstItem="GYu-ia-n28" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="oc9-JU-71b"/>
+                    <constraint firstItem="7go-9o-7ze" firstAttribute="leading" secondItem="GYu-ia-n28" secondAttribute="trailing" constant="8" id="p9q-dl-wrT"/>
+                    <constraint firstItem="GYu-ia-n28" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="v6O-WS-F8Y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GYu-ia-n28" secondAttribute="bottom" constant="5" id="vJK-5h-reC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vJK-5h-reC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="connect" destination="pn9-0h-pHq" id="R37-pc-WdM"/>
+                <outlet property="message" destination="hdU-2d-Mkh" id="8qy-tE-ech"/>
+                <outlet property="name" destination="7go-9o-7ze" id="L2H-4w-NXa"/>
+                <outlet property="teacherImg" destination="GYu-ia-n28" id="RJm-cD-BIR"/>
+                <outlet property="type" destination="0AN-P1-qZv" id="S6e-ZE-RNn"/>
+            </connections>
+            <point key="canvasLocation" x="334" y="308"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="001.png" width="230" height="230"/>
+        <image name="个人－私信" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FooterID" reuseIdentifier="" id="U6b-Vx-4bR" customClass="FooterReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPD-wH-oMw">
+                    <rect key="frame" x="30" y="30" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.63921568627450975" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3tx-El-dGV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确 定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="T08-eh-VB9"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-G3-MoD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SH0-CN-ylp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xSB-G3-MoD" secondAttribute="trailing" id="9LZ-cz-IO7"/>
+                <constraint firstItem="lPD-wH-oMw" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="30" id="CWp-Vx-xKc"/>
+                <constraint firstItem="xSB-G3-MoD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Xu0-tg-cWG"/>
+                <constraint firstItem="lPD-wH-oMw" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="30" id="i39-eI-IDr"/>
+                <constraint firstItem="xSB-G3-MoD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="o8K-sQ-eHh"/>
+                <constraint firstAttribute="trailing" secondItem="lPD-wH-oMw" secondAttribute="trailing" constant="30" id="s4p-i6-tAF"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+</document>

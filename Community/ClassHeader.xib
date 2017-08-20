@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ClassHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="headerID" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-Wi-Wl5">
+                    <rect key="frame" x="10" y="39" width="300" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5Q0-tM-hrx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-12-2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weI-Vt-cZW">
+                    <rect key="frame" x="10" y="11" width="128" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="lSZ-MG-4pn"/>
+                        <constraint firstAttribute="height" constant="21" id="vc9-yA-ZWX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.63921568630000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="weI-Vt-cZW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="7fH-LK-BnT"/>
+                <constraint firstItem="iRD-Wi-Wl5" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="8pm-QZ-JUS"/>
+                <constraint firstItem="iRD-Wi-Wl5" firstAttribute="top" secondItem="weI-Vt-cZW" secondAttribute="bottom" constant="7" id="Esq-t8-fcU"/>
+                <constraint firstItem="weI-Vt-cZW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="11" id="Tai-ls-w7q"/>
+                <constraint firstAttribute="trailing" secondItem="iRD-Wi-Wl5" secondAttribute="trailing" constant="10" id="itk-TB-Jog"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="weI-Vt-cZW" id="UMv-jL-G0D"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

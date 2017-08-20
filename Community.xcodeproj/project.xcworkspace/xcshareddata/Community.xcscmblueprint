@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++3541",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++2360" : {
+
+    },
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++3541" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++2360" : 0,
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++3541" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE426983-7C4C-42EC-A0FE-1A9FFE89B83E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++2360" : "",
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++3541" : "yishuka\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Community",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Community.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/gongzuoshiApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++2360"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/gongzuoshiApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++3541"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="ClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001.png" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-FV-ahF">
+                        <rect key="frame" x="18" y="18" width="34" height="34"/>
+                        <color key="backgroundColor" red="1" green="0.83644178209999998" blue="0.1218832061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="Dve-I7-x7E"/>
+                            <constraint firstAttribute="height" constant="34" id="FEc-is-lxI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朝阳少年宫舞蹈2015级班 ( 20人 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6P-6O-oV0">
+                        <rect key="frame" x="62" y="18" width="225" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" 机构班级 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cz-B6-hdM">
+                        <rect key="frame" x="62" y="41" width="59.5" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.70837379096311559" blue="0.064066072840359811" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WKZ-Xm-Jpx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看通告详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuY-Yq-Zz2">
+                        <rect key="frame" x="276" y="41" width="90" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.83644178209999998" blue="0.1218832061" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通讯录－群公告" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-1c-A6b">
+                        <rect key="frame" x="18" y="72" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="1Pa-Bh-xyj"/>
+                            <constraint firstAttribute="width" constant="17" id="AWA-nB-G7V"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群主公告：有群的各位小伙伴们，这个月我们有面给的公开课。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-X4-DYW">
+                        <rect key="frame" x="45" y="72" width="331" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.37486190029999999" green="0.37486190029999999" blue="0.37486190029999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A6P-6O-oV0" firstAttribute="top" secondItem="IXt-FV-ahF" secondAttribute="top" id="7yw-Md-pWa"/>
+                    <constraint firstItem="ZuY-Yq-Zz2" firstAttribute="top" secondItem="A6P-6O-oV0" secondAttribute="bottom" constant="5" id="9mH-SR-L9q"/>
+                    <constraint firstItem="ay4-X4-DYW" firstAttribute="leading" secondItem="DhL-1c-A6b" secondAttribute="trailing" constant="10" id="Lym-2q-IT9"/>
+                    <constraint firstItem="2Cz-B6-hdM" firstAttribute="top" secondItem="A6P-6O-oV0" secondAttribute="bottom" constant="5" id="UnI-cg-4MI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ay4-X4-DYW" secondAttribute="trailing" constant="10" id="hPS-uA-wNS"/>
+                    <constraint firstItem="IXt-FV-ahF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="iV3-XO-YDu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZuY-Yq-Zz2" secondAttribute="trailing" constant="20" id="nfu-fv-Mj5"/>
+                    <constraint firstItem="IXt-FV-ahF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="nvw-EY-OCo"/>
+                    <constraint firstItem="DhL-1c-A6b" firstAttribute="top" secondItem="IXt-FV-ahF" secondAttribute="bottom" constant="20" id="rPg-zZ-sqK"/>
+                    <constraint firstItem="ay4-X4-DYW" firstAttribute="top" secondItem="DhL-1c-A6b" secondAttribute="top" id="ubz-jO-Sjc"/>
+                    <constraint firstItem="A6P-6O-oV0" firstAttribute="leading" secondItem="IXt-FV-ahF" secondAttribute="trailing" constant="10" id="vat-V5-s9Z"/>
+                    <constraint firstItem="DhL-1c-A6b" firstAttribute="leading" secondItem="IXt-FV-ahF" secondAttribute="leading" id="wvn-K5-skg"/>
+                    <constraint firstItem="2Cz-B6-hdM" firstAttribute="leading" secondItem="IXt-FV-ahF" secondAttribute="trailing" constant="10" id="zp0-CJ-exE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="connect" destination="ay4-X4-DYW" id="Rjj-cj-C7H"/>
+                <outlet property="detail" destination="ZuY-Yq-Zz2" id="dUX-bc-SDU"/>
+                <outlet property="laba" destination="DhL-1c-A6b" id="sBf-gD-vyL"/>
+                <outlet property="name" destination="A6P-6O-oV0" id="n6W-zr-lgB"/>
+                <outlet property="teacherImg" destination="IXt-FV-ahF" id="s1G-mw-290"/>
+                <outlet property="type" destination="2Cz-B6-hdM" id="Nmi-Z0-FFD"/>
+            </connections>
+            <point key="canvasLocation" x="464" y="316"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="001.png" width="230" height="230"/>
+        <image name="通讯录－群公告" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClassroomVC">
+            <connections>
+                <outlet property="collection" destination="t1U-QZ-2Zs" id="tUA-M8-lAC"/>
+                <outlet property="layout" destination="b8X-O6-foc" id="SdC-Cd-5iE"/>
+                <outlet property="noDataImage" destination="w4B-Uo-5mp" id="ePW-2F-j7u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="t1U-QZ-2Zs">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b8X-O6-foc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ylk-Yr-IY4"/>
+                        <outlet property="delegate" destination="-1" id="Kv0-mO-vAW"/>
+                    </connections>
+                </collectionView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="回课记－空" translatesAutoresizingMaskIntoConstraints="NO" id="w4B-Uo-5mp">
+                    <rect key="frame" x="0.0" y="153" width="320" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="78N-fn-jUa"/>
+                        <constraint firstAttribute="width" constant="320" id="yXb-7K-E82"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="t1U-QZ-2Zs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LmV-DU-JF3"/>
+                <constraint firstItem="w4B-Uo-5mp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SCA-wO-nqU"/>
+                <constraint firstItem="t1U-QZ-2Zs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="V3q-TA-nwu"/>
+                <constraint firstAttribute="bottom" secondItem="t1U-QZ-2Zs" secondAttribute="bottom" id="fG2-SX-B79"/>
+                <constraint firstAttribute="trailing" secondItem="t1U-QZ-2Zs" secondAttribute="trailing" id="lyf-Eg-aPm"/>
+                <constraint firstItem="w4B-Uo-5mp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="153" id="rBQ-gj-Hcu"/>
+            </constraints>
+            <point key="canvasLocation" x="283" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="回课记－空" width="320" height="160"/>
+    </resources>
+</document>

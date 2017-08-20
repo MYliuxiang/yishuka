@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="351" id="KGk-i7-Jjw" customClass="NodataSCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通告牌－学生－空" translatesAutoresizingMaskIntoConstraints="NO" id="Kgl-aT-S5t">
+                        <rect key="frame" x="0.0" y="58" width="320" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="iEf-eP-pCD"/>
+                            <constraint firstAttribute="width" constant="320" id="uL4-2Z-tmv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="公告牌－无－箭头" translatesAutoresizingMaskIntoConstraints="NO" id="Neh-u9-vIi">
+                        <rect key="frame" x="143" y="258" width="35" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="C1b-ox-MGW"/>
+                            <constraint firstAttribute="height" constant="60" id="w16-jr-TEz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kgl-aT-S5t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="50" id="JAz-P7-S0h"/>
+                    <constraint firstItem="Neh-u9-vIi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KKe-jX-Gbe"/>
+                    <constraint firstItem="Kgl-aT-S5t" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dUq-zG-Rz0"/>
+                    <constraint firstItem="Neh-u9-vIi" firstAttribute="top" secondItem="Kgl-aT-S5t" secondAttribute="bottom" constant="40" id="nuY-2C-qSg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="216" y="344.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="公告牌－无－箭头" width="35" height="60"/>
+        <image name="通告牌－学生－空" width="320" height="160"/>
+    </resources>
+</document>
